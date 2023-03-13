@@ -42,7 +42,7 @@ public class EmployeeController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-    @GetMapping("/test/{id}")
+    @GetMapping("/test/{role}")
     public ResponseEntity<String> getEmployeeRoleById() {
         try {
             CompletableFuture<String> employeeRole = employeeService.getEmployeeRoleById();
