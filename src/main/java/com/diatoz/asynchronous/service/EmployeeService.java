@@ -19,7 +19,7 @@ public class EmployeeService {
         Employee employees = new Employee();
         employees.setId(1L);
         employees.setName("Malashree");
-        employees.setRole("developer");
+        employees.setRole("Testing");
         Thread.sleep(6000L);
         log.info("------getAllEmployees completed------");
         return CompletableFuture.completedFuture(Collections.singletonList(employees));
@@ -30,7 +30,7 @@ public class EmployeeService {
         log.info("------getEmployeeRoleById started-----");
         Thread.sleep(4000L);
         log.info("------getEmployeeRoleById completed-----");
-        return CompletableFuture.completedFuture("developer");
+        return CompletableFuture.completedFuture("Testing");
     }
 
     public Employee getEmployeeById(Long id) throws InterruptedException {
