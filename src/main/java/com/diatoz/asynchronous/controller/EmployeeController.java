@@ -32,6 +32,7 @@ public class EmployeeController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
     @GetMapping("/employee/{id}")
     public ResponseEntity<?> getEmployeeById(Long id) throws InterruptedException {
         try{
@@ -42,6 +43,7 @@ public class EmployeeController {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
     @GetMapping("/test/{role}")
     public ResponseEntity<String> getEmployeeRoleById() {
         try {

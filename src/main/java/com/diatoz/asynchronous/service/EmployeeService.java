@@ -30,7 +30,7 @@ public class EmployeeService {
         log.info("------getEmployeeRoleById started-----");
         Thread.sleep(4000L);
         log.info("------getEmployeeRoleById completed-----");
-        return CompletableFuture.completedFuture("Testing");
+        return CompletableFuture.completedFuture("developer");
     }
 
     public Employee getEmployeeById(Long id) throws InterruptedException {
